@@ -5,7 +5,7 @@ public class Calculadora {
 
     public int r = 0;
 
-    public int calc(int a, int b, String op) {
+    public int calcular(int a, int b, String op) {
 
         //Calculadora
         if (op.equals("+")) {
@@ -22,8 +22,7 @@ public class Calculadora {
                 r = 0;
             }
         } else {
-            System.out.println("Operacao invalida");
-            r = 0;
+    throw new IllegalArgumentException("Operacao invalida");
         }
 
         System.out.println("Resultado = " + r);
