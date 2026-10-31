@@ -1,26 +1,22 @@
-
 package calculadora;
 
 /**
- * Realiza operações matemáticas básicas com números inteiros.
+ * Calculadora com operações matemáticas básicas.
  *
  * @author Isabelly Emilye Hoffmann Furquim
  * @version 1.0
  */
 public class Calculadora {
 
-    /**
-     * Armazena o resultado da operação matemática.
-     */
     public int r = 0;
 
     /**
-     * Executa uma operação matemática entre dois números inteiros.
+     * Realiza a operação escolhida.
      *
-     * @param a primeiro número da operação
-     * @param b segundo número da operação
-     * @param op operador matemático (+, -, * ou /)
-     * @return resultado da operação, ou 0 em caso de divisão por zero
+     * @param a primeiro número
+     * @param b segundo número
+     * @param op operação (+, -, * ou /)
+     * @return resultado da operação
      * @throws IllegalArgumentException se a operação for inválida
      */
     public int calcular(int a, int b, String op) {
@@ -42,17 +38,15 @@ public class Calculadora {
     }
 
     /**
-     * Realiza a divisão entre dois números inteiros.
+     * Realiza a divisão, verificando se o divisor é zero.
      *
      * @param a dividendo
      * @param b divisor
-     * @return resultado da divisão, ou 0 se o divisor for zero
+     * @return resultado da divisão ou zero
      */
     private int dividir(int a, int b) {
         if (b == 0) {
-            System.out.println(
-                "Erro: divisao por zero, operacao irregular"
-            );
+            System.out.println("Erro: divisao por zero, operacao irregular");
             return 0;
         }
 

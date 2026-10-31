@@ -1,8 +1,7 @@
-
 package calculadora;
 
 /**
- * Executa testes básicos da classe Calculadora.
+ * Testa as operações da calculadora.
  *
  * @author Isabelly Emilye Hoffmann Furquim
  * @version 1.0
@@ -10,35 +9,27 @@ package calculadora;
 public class TesteCalculadora {
 
     /**
-     * Executa os testes das operações matemáticas.
+     * Executa os testes.
      *
      * @param args argumentos da linha de comando
      */
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
 
-        // Teste de soma: esperado 5
-        calc.calcular(2, 3, "+");
+        calc.calcular(2, 3, "+");  // Esperado: 5
 
-        // Teste de subtração: esperado 6
-        calc.calcular(10, 4, "-");
+        calc.calcular(10, 4, "-"); // Esperado: 6
 
-        // Teste de multiplicação: esperado 15
-        calc.calcular(3, 5, "*");
+        calc.calcular(3, 5, "*");  // Esperado: 15
 
-        // Teste de divisão: esperado 4
-        calc.calcular(8, 2, "/");
+        calc.calcular(8, 2, "/");  // Esperado: 4
 
-        // Teste de divisão por zero: esperado 0
-        calc.calcular(8, 0, "/");
+        calc.calcular(8, 0, "/");  // Esperado: 0
 
-        // Teste de operação inválida
         try {
             calc.calcular(5, 5, "x");
         } catch (IllegalArgumentException e) {
-            System.out.println(
-                "Teste de operacao invalida: " + e.getMessage()
-            );
+            System.out.println("Operacao invalida: " + e.getMessage());
         }
     }
 }
