@@ -9,10 +9,10 @@
 **Projeto:** Projeto Calculadora  
 **Contexto:** FinançApp  
 **Aluno:** Isabelly Emilye Hoffmann Furquim  
-**RA:** 252288
+**RA:** 252288  
 **Curso:** Análise e Desenvolvimento de Sistemas  
 **Disciplina:** UX/UI  
-**Professor:** Daniel Ohata 
+**Professor:** Daniel Ohata  
 **Semestre:** 2026.2
 
 ---
@@ -97,25 +97,24 @@ Desenvolver uma calculadora em Java aplicando práticas de qualidade de software
 
 ## 8. Estrutura do Projeto
 
-```text
-projeto_calculadora/
-│
-├── calculadora/
-│   ├── Calculadora.java
-│   └── TesteCalculadora.java
-│
-├── docs/
-│   ├── index.html
-│   └── demais arquivos gerados pelo JavaDoc
-│
-├── images/
-│   ├── testes.png
-│   ├── refatoracao1.png
-│   ├── refatoracao2.png
-│   ├── javadoc.png
-│   └── javadoc-calculadora.png
-│
-└── README.md
+    projeto_calculadora/
+    │
+    ├── calculadora/
+    │   ├── Calculadora.java
+    │   └── TesteCalculadora.java
+    │
+    ├── docs/
+    │   ├── index.html
+    │   └── demais arquivos gerados pelo JavaDoc
+    │
+    ├── images/
+    │   ├── testes.png
+    │   ├── refatoracao1.png
+    │   ├── refatoracao2.png
+    │   ├── javadoc.png
+    │   └── javadoc-calculadora.png
+    │
+    └── README.md
 
 A estrutura apresentada corresponde à organização atual do projeto. Os arquivos Java estão no pacote `calculadora`, e a documentação HTML gerada está na pasta `docs`.
 
@@ -156,8 +155,11 @@ Entre as alterações implementadas estão:
 
 O objetivo foi melhorar a legibilidade e a manutenção do código, mantendo os resultados esperados das operações válidas.
 
-**Evidência da refatoração:** ![Refatoração - método calcular](images/refatoracao1.png)
-                              ![Refatoração - método dividir](images/refatoracao2.png)
+**Evidências da refatoração:**
+
+![Refatoração - método calcular](images/refatoracao1.png)
+
+![Refatoração - método dividir](images/refatoracao2.png)
 
 ---
 
