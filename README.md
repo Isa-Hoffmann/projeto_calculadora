@@ -108,8 +108,14 @@ projeto_calculadora/
 │   ├── index.html
 │   └── demais arquivos gerados pelo JavaDoc
 │
+├── images/
+│   ├── testes.png
+│   ├── refatoracao1.png
+│   ├── refatoracao2.png
+│   ├── javadoc.png
+│   └── javadoc-calculadora.png
+│
 └── README.md
-```
 
 A estrutura apresentada corresponde à organização atual do projeto. Os arquivos Java estão no pacote `calculadora`, e a documentação HTML gerada está na pasta `docs`.
 
@@ -132,7 +138,7 @@ Foram realizados testes para verificar as quatro operações matemáticas, a div
 
 ### 9.2 Evidência dos testes
 
-Inserir aqui a captura de tela do console com os resultados dos seis testes.
+![Execução dos testes](images/testes.png)
 
 ---
 
@@ -150,19 +156,26 @@ Entre as alterações implementadas estão:
 
 O objetivo foi melhorar a legibilidade e a manutenção do código, mantendo os resultados esperados das operações válidas.
 
-**Evidência da refatoração:** inserir uma captura de tela do código refatorado.
+**Evidência da refatoração:** ![Refatoração - método calcular](images/refatoracao1.png)
+                              ![Refatoração - método dividir](images/refatoracao2.png)
 
 ---
 
 ## 11. Documentação JavaDoc
 
-A documentação técnica foi gerada por meio da ferramenta JavaDoc, disponibilizada pelo JDK.
+A documentação do projeto foi gerada utilizando a ferramenta JavaDoc do JDK 21.
 
-Os arquivos HTML estão armazenados na pasta `docs`, incluindo o arquivo principal `index.html`.
+Os arquivos HTML foram armazenados na pasta `docs`, com o arquivo `index.html` como página inicial.
 
-A documentação apresenta informações sobre as classes, os métodos, os parâmetros e os retornos documentados.
+A documentação apresenta as classes, seus atributos, métodos, parâmetros, retornos e exceções.
 
-**Evidência da documentação:** inserir uma captura de tela do JavaDoc aberto no navegador.
+### 11.1 Documentação do pacote
+
+![Documentação do pacote calculadora](images/javadoc.png)
+
+### 11.2 Documentação da classe Calculadora
+
+![Detalhes da classe Calculadora](images/javadoc-calculadora.png)
 
 ---
 
